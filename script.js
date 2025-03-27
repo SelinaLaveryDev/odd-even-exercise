@@ -20,13 +20,13 @@ function createBox() {
   numberTheBox(div);
 
   const isClicked = div.addEventListener("click", function () {
-    console.log("div has been clicked");
+    console.log(div);
   });
 }
 
 function removeBox() {
   if (isClicked) {
-    console.log(isClicked);
+    console.log(div);
   }
 }
 
