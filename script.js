@@ -52,6 +52,9 @@ function addBoxToColumn(div) {
 function findParent(div) {
   const number = div.innerText;
   console.log(`${number} has been clicked`);
+  console.log(div.parentElement);
+  const divParent = div.parentElement.innerText;
+  console.log("divParent", divParent);
 }
 
 //event listeners
