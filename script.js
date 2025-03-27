@@ -18,3 +18,8 @@ boxNum.innerText = "1";
 console.log(boxNum);
 
 //event listeners
+counterButton.addEventListener("click", function () {
+  counter++;
+  counterText.innerText = counter;
+  createBox();
+});
