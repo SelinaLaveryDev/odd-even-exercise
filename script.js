@@ -8,6 +8,7 @@ const evenColumn = document.querySelector(".even-column");
 const threeColumn = document.querySelector(".three-column");
 const fiveColumn = document.querySelector(".five-column");
 const fifteenColumn = document.querySelector(".fifteen-column");
+const resetButton = document.querySelector(".reset-button");
 
 //variables
 let counter = 0;
@@ -47,4 +48,8 @@ counterButton.addEventListener("click", function () {
   counter++;
   counterText.innerText = counter;
   createBox();
+});
+
+resetButton.addEventListener("click", function () {
+  window.location.reload();
 });

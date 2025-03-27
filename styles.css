@@ -14,7 +14,8 @@ body {
   font-family: "PT Sans", sans-serif;
 }
 
-.counter-button {
+.counter-button,
+.reset-button {
   padding: 8px 16px;
   background: #d2ff96;
   font-weight: 600;
