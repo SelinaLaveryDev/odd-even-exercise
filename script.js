@@ -45,16 +45,17 @@ function addBoxToColumn(div) {
     // console.log(div.innerText);
     // evenColumn.removeChild(div);
     // oddColumn.removeChild(div);
-    findParent(div);
+    removeBox(div);
   });
 }
 
-function findParent(div) {
+function removeBox(div) {
   const number = div.innerText;
   console.log(`${number} has been clicked`);
   console.log(div.parentElement);
   const divParent = div.parentElement.innerText;
   console.log("divParent", divParent);
+  divParent.removeChild(div);
 }
 
 //event listeners
