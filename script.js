@@ -26,9 +26,15 @@ function createBox() {
 }
 
 function addBoxToColumn(div) {
-  if (counter % 2 !== 0) {
+  if (counter % 15 === 0) {
+    fifteenColumn.appendChild(div);
+  } else if (counter % 5 === 0) {
+    fiveColumn.appendChild(div);
+  } else if (counter % 3 === 0) {
+    threeColumn.appendChild(div);
+  } else if (counter % 2 !== 0) {
     oddColumn.appendChild(div);
-  } else if (counter % 2 === 0) {
+  } else {
     evenColumn.appendChild(div);
   }
 }
