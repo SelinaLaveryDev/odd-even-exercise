@@ -16,7 +16,10 @@ let counter = 0;
 function createBox() {
   const div = document.createElement("div");
   div.classList.add("box");
-  // number the box
+  numberTheBox(div);
+}
+
+function numberTheBox(div) {
   const h1 = document.createElement("h1");
   h1.classList.add("box-numbers");
   h1.innerText = counter;
