@@ -5,6 +5,9 @@ const counterButton = document.querySelector(".counter-button");
 const counterText = document.querySelector(".counter-text");
 const oddColumn = document.querySelector(".odd-column");
 const evenColumn = document.querySelector(".even-column");
+const threeColumn = document.querySelector(".three-column");
+const fiveColumn = document.querySelector(".five-column");
+const fifteenColumn = document.querySelector(".fifteen-column");
 
 //variables
 let counter = 0;
