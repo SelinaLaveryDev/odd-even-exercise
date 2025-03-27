@@ -18,6 +18,16 @@ function createBox() {
   const div = document.createElement("div");
   div.classList.add("box");
   numberTheBox(div);
+
+  const isClicked = div.addEventListener("click", function () {
+    console.log("div has been clicked");
+  });
+}
+
+function removeBox() {
+  if (isClicked) {
+    console.log(isClicked);
+  }
 }
 
 function numberTheBox(div) {
