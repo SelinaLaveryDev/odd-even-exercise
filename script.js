@@ -4,8 +4,7 @@ console.clear();
 const counterButton = document.querySelector(".counter-button");
 const counterText = document.querySelector(".counter-text");
 const oddColumn = document.querySelector(".odd-column");
-const oddBox = document.createElement("div");
-const boxNum = document.createElement("h1");
+const evenColumn = document.querySelector(".even-column");
 
 //variables
 let counter = 0;
