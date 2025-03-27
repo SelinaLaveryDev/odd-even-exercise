@@ -20,7 +20,7 @@ function createBox() {
   numberTheBox(div);
 
   const isClicked = div.addEventListener("click", function () {
-    console.log(div);
+    console.log(div.innerText);
   });
 }
 
