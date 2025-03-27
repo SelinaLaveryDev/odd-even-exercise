@@ -22,6 +22,14 @@ function createBox() {
   addBoxToColumn(div);
 }
 
+function addBoxToColumn(div) {
+  if (counter % 2 !== 0) {
+    oddColumn.appendChild(div);
+  } else if (counter % 2 === 0) {
+    evenColumn.appendChild(div);
+  }
+}
+
 //event listeners
 counterButton.addEventListener("click", function () {
   counter++;
