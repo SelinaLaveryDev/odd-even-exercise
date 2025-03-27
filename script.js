@@ -42,8 +42,16 @@ function addBoxToColumn(div) {
     evenColumn.appendChild(div);
   }
   const isClicked = div.addEventListener("click", function () {
-    console.log(div.innerText);
+    // console.log(div.innerText);
+    // evenColumn.removeChild(div);
+    // oddColumn.removeChild(div);
+    findParent(div);
   });
+}
+
+function findParent(div) {
+  const number = div.innerText;
+  console.log(`${number} has been clicked`);
 }
 
 //event listeners
